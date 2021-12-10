@@ -56,7 +56,28 @@ class _ResultScreenState extends State<ResultScreen> {
                     fontSize: 16,
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8),
+                child: Center(
+                  child: Text(
+                    'Benefits of sleep',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                    ),
+                  ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "Sufficient sleep makes you live longer, learn better, increases your ability and efficiency to remember what you need, forget bad experiences, improves your muscle memory, creativity, productivity, focus, makes your mind faster by 20%, decreases your injury chance during sports, upgrades your protection against cancer, dementia, alzheimer, lowers the risk of heart attacks, strokes and diabetes, wards off cold, flu, keeps you away from food cravings, gaining extra weight, makes you look more attractive and mainly helps you feel happier, less depressed and anxious. Just give yourself the 8 hours of sleep and all of the above automatically happens, what a productive night, huh?",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
@@ -185,9 +206,9 @@ class _ResultScreenState extends State<ResultScreen> {
 
     if (daScore <= 1000) {
       sleepState = 'You are extremely sleep deprivated';
-    } else if (daScore <= 10000) {
-      sleepState = 'You are sleep deprivated';
     } else if (daScore <= 100000) {
+      sleepState = 'You are sleep deprivated';
+    } else if (daScore <= 10000000) {
       sleepState = 'You are ok';
     } else {
       sleepState = 'Your sleeping habits are top notch';
